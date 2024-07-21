@@ -3,6 +3,8 @@ using namespace std;
 
 int add(int a,int b,int mod){
   int res=(a%mod+b%mod)%mod;
+  if(res<0)
+    res+=mod;
   return res;
 }
 int mul(int a,int b,int mod){
